@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/encLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/encField"
+        android:layout_marginTop="33dp"
+        android:text="Encode This" />
+
+    <TextView
+        android:id="@+id/decLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/encLab"
+        android:layout_marginTop="166dp"
+        android:text="Decode This" />
+
+    <EditText
+        android:id="@+id/encField"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:inputType="text"
+        android:text="Lambos were promised!" />
+
+    <EditText
+        android:id="@+id/decField"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="193dp"
+        android:inputType="text"
+        android:text="2NEpo7TZRRrLZSi2U" />
+
+    <Button
+        android:id="@+id/decButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/encButton"
+        android:layout_marginEnd="48dp"
+        android:onClick="decode"
+        android:text="Decode" />
+
+    <Button
+        android:id="@+id/encButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/encLab"
+        android:layout_marginBottom="169dp"
+        android:onClick="encode"
+        android:text="Encode" />
+</RelativeLayout>
